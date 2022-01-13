@@ -59,10 +59,11 @@ function draw() {
   Engine.update(engine);
 
   if (gameState === "End") {
-    fill("White");
     textSize(50);
     textFont("MS UI Gothic");
+    fill("Orange");
     text("GAME OVER!", 250, 150);
+    fill("White");
     text("Total Score: " + score, 220, 265);
     text("High Score: " + hiScore, 227, 335);
     text("Press ENTER to Restart", 140, 450);
